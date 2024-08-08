@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-square',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './square.component.scss'
 })
 export class SquareComponent {
-
+  @Input() value: 'X' | 'O' = 'X';
 }
